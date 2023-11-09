@@ -1,22 +1,23 @@
 <template>
-    <section id="top">
-        <div class="container">
-            <h5 class="text-white fs-3">Content Goes Here</h5>
-        </div>
-    </section>
-
-    <section id="bottom">
-        <div class="container">
-            <ul class="w-100">
-                <li v-for="item in dataBottomMain" class="list-group-item text-uppercase d-flex align-items-baseline">
-                    <div class="box-item-logo">
-                        <img :src="item.img" alt="item.name" class="w-100">
-                    </div>
-                    <p class="px-3 fs-6 fw-bold mt-4">{{ item.text }}</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <div id="all-top-main">
+        <section id="top">
+            <div class="container px-5">
+                <h5 class="text-white fs-3">Content Goes Here</h5>
+            </div>
+        </section>
+        <section id="bottom">
+            <div class="container ">
+                <ul class="w-100">
+                    <li v-for="item in dataBottomMain" class=" text-uppercase d-flex align-items-baseline">
+                        <div class="box-item-logo">
+                            <img :src="item.img" alt="item.name" class="w-100">
+                        </div>
+                        <p class="px-3 fs-6 fw-bold mt-4">{{ item.text }}</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -52,8 +53,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#top-all-main{
+    display: flex;
+    flex-grow: 1;
+}
 section{
-    height: 150px;
+    min-height: 120px;
     color: white;
 }
 #top{
@@ -63,17 +68,19 @@ section{
     background-color: #0282f9;
 }
 .container{
-    height: 100%;
+    min-height: 100px;
     display: flex;
     align-items: center;
 }
 .box-item-logo{
     width: 50px;
-    height: 50px;
     cursor: pointer;
 }
 ul{
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 </style>

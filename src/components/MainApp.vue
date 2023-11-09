@@ -1,6 +1,6 @@
 <template>
-    <TopMain/>
-    <BottomMain/>
+        <TopMain/>
+        <BottomMain/>
 </template>
 
 <script>

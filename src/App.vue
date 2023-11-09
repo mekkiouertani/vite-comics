@@ -1,7 +1,7 @@
 <template>
     <div id="all">
       <HeaderApp />
-      <MainApp />
+      <MainApp id="main"/>
       <FooterApp id="footer"/>
     </div>
 </template>
@@ -24,11 +24,14 @@ export default {
 
 <style lang="scss" scoped>
 #all{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  #footer{
+  #main{
     flex-grow: 1;
   }
 }
+  #footer{
+    flex-grow: 1;
+  }
 </style>

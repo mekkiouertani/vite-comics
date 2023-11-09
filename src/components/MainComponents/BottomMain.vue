@@ -1,12 +1,12 @@
 <template>
     <section>
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between p-0">
             <div class="left">
-                <ul class="mt-3">
-                    <li v-for="(item, index) in itemsBottomMain" :key="index" class="list-group-item">
+                <ul class="mt-1">
+                    <li v-for="(item, index) in itemsBottomMain" :key="index">
                         <h4 class="text-uppercase">{{ item.title }}</h4>
-                        <div v-for="(list, index) in itemsBottomMain" class="text-secondary">
-                            {{ list.listItems[index] }}
+                        <div v-for="(list, index) in itemsBottomMain[index].listItems" class="text-secondary">
+                            {{ list }}
                         </div>
                     </li>
                 </ul>
@@ -31,26 +31,22 @@ export default {
                     "Comics",
                     "Movies",
                     "Tv",
-                    "Characters",
-                    "Comics",
-                    "Movies",
-                    "Tv",
-                ],
-            },
-            {
-                title: "shop",
-                listItems: [
-                    "Characters",
-                    "Comics",
+                    "Games",
+                    "Video",
+                    "News",
                 ],
             },
             {
                 title: "dc",
                 listItems: [
-                    "Characters",
+                "Characters",
                     "Comics",
                     "Movies",
                     "Tv",
+                    "Games",
+                    "Video",
+                    
+                    
                 ],
             },
             {
@@ -60,6 +56,19 @@ export default {
                     "Comics",
                     "Movies",
                     "Tv",
+                    "Characters",
+                    "Comics",
+                    "Movies",
+                   
+                    
+                ],
+            },
+            {
+                title: "shop",
+                listItems: [
+                    "Characters",
+                    "Comics",
+
                 ],
             },
         ]
@@ -72,14 +81,18 @@ export default {
 <style lang="scss" scoped>
 section{
     background-image: url(../../../public/images/footer-bg.jpg);
-    height: 400px;
     overflow: hidden;
     color: white;
+    max-height: 400px;
 }
 ul{
     width: 500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    align-items: start;
+    
     li{
         padding: 20px 30px 0px 20px;
     }

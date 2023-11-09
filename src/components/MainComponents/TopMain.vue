@@ -27,23 +27,23 @@ export default {
             dataBottomMain: [
                 {
                     text: "digital comics",
-                    img : "../../../public/images/buy-comics-digital-comics.png"
+                    img : "../../../images/buy-comics-digital-comics.png"
                 },
                 {
                     text: "dc merchandise",
-                    img : "../../../public/images/buy-comics-merchandise.png"
+                    img : "../../../images/buy-comics-merchandise.png"
                 },
                 {
                     text: "subscritpion",
-                    img : "../../../public/images/buy-comics-subscriptions.png"
+                    img : "../../../images/buy-comics-subscriptions.png"
                 },
                 {
                     text: "comic shop locator",
-                    img : "../../../public/images/buy-comics-shop-locator.png"
+                    img : "../../../images/buy-comics-shop-locator.png"
                 },
                 {
                     text: "dc power visa",
-                    img : "../../../public/images/buy-dc-power-visa.svg"
+                    img : "../../../images/buy-dc-power-visa.svg"
                 },
             ]
         }
@@ -70,6 +70,7 @@ section{
 .box-item-logo{
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 ul{
     display: flex;

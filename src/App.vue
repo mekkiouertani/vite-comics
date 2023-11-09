@@ -1,7 +1,9 @@
 <template>
-  <HeaderApp />
-  <MainApp />
-  <FooterApp />
+    <div id="all">
+      <HeaderApp />
+      <MainApp />
+      <FooterApp id="footer"/>
+    </div>
 </template>
 
 <script>
@@ -21,5 +23,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+#all{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  #footer{
+    flex-grow: 1;
+  }
+}
 </style>

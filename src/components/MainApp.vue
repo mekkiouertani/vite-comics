@@ -9,7 +9,7 @@ import TopMain from './MainComponents/TopMain.vue';
 
 export default {
     name: "MainApp",
-    components: { TopMain, BottomMain},
+    components: { TopMain, BottomMain,},
     data() {
         return {
         }

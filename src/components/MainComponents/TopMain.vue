@@ -3,7 +3,11 @@
 
         <section id="top">
             <div class="container px-5">
-                
+                <div class="row gy-2">
+                    <div class="col-12 col-md-4 col-lg-3" v-for="(card, index) in cards" :key="index">
+                        <CardComponent :image="card.thumb" :title="card.series" />
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -23,37 +27,40 @@
 </template>
 
 <script>
-import {cards} from './../../data/dc-comics.js';
+import { cards } from './../../data/dc-comics.js';
 import CardComponent from '../MainComponents/CardComponent/CardComponent.vue'
+
 export default {
-    component : { cards, CardComponent},
+    name: "TopMain",
+    component: { cards, CardComponent },
     
-    data(){
-        return{
+    data() {
+        return {
+            cards: cards,
             dataBottomMain: [
                 {
                     text: "digital comics",
-                    img : "../../../images/buy-comics-digital-comics.png"
+                    img: "../../../images/buy-comics-digital-comics.png"
                 },
                 {
                     text: "dc merchandise",
-                    img : "../../../images/buy-comics-merchandise.png"
+                    img: "../../../images/buy-comics-merchandise.png"
                 },
                 {
                     text: "subscritpion",
-                    img : "../../../images/buy-comics-subscriptions.png"
+                    img: "../../../images/buy-comics-subscriptions.png"
                 },
                 {
                     text: "comic shop locator",
-                    img : "../../../images/buy-comics-shop-locator.png"
+                    img: "../../../images/buy-comics-shop-locator.png"
                 },
                 {
                     text: "dc power visa",
-                    img : "../../../images/buy-dc-power-visa.svg"
+                    img: "../../../images/buy-dc-power-visa.svg"
                 },
             ]
-        }
-    }
+        };
+    },
 }
 </script>
 

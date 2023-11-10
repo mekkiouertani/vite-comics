@@ -21,79 +21,80 @@
 <script>
 export default {
     name: "BottomMain",
-    data(){
-        return{
+    data() {
+        return {
             itemsBottomMain: [
-            {
-                title: "dc comics",
-                listItems: [
-                    "Characters",
-                    "Comics",
-                    "Movies",
-                    "Tv",
-                    "Games",
-                    "Video",
-                    "News",
-                ],
-            },
-            {
-                title: "dc",
-                listItems: [
-                "Characters",
-                    "Comics",
-                    "Movies",
-                    "Tv",
-                    "Games",
-                    "Video",
-                    
-                    
-                ],
-            },
-            {
-                title: "sites",
-                listItems: [
-                    "Characters",
-                    "Comics",
-                    "Movies",
-                    "Tv",
-                    "Characters",
-                    "Comics",
-                    "Movies",
-                   
-                    
-                ],
-            },
-            {
-                title: "shop",
-                listItems: [
-                    "Characters",
-                    "Comics",
+                {
+                    title: "dc comics",
+                    listItems: [
+                        "Characters",
+                        "Comics",
+                        "Movies",
+                        "Tv",
+                        "Games",
+                        "Video",
+                        "News",
+                    ],
+                },
+                {
+                    title: "dc",
+                    listItems: [
+                        "Characters",
+                        "Comics",
+                        "Movies",
+                        "Tv",
+                        "Games",
+                        "Video",
 
-                ],
-            },
-        ]
+
+                    ],
+                },
+                {
+                    title: "sites",
+                    listItems: [
+                        "Characters",
+                        "Comics",
+                        "Movies",
+                        "Tv",
+                        "Characters",
+                        "Comics",
+                        "Movies",
+
+
+                    ],
+                },
+                {
+                    title: "shop",
+                    listItems: [
+                        "Characters",
+                        "Comics",
+
+                    ],
+                },
+            ]
         }
-        
+
     }
 }
 </script>
 
 <style lang="scss" scoped>
-section{
+section {
     background-image: url(../../../images/footer-bg.jpg);
     overflow: hidden;
     color: white;
     max-height: 400px;
 }
-ul{
+
+ul {
     width: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     align-content: start;
     align-items: start;
-    
-    li{
+
+    li {
         padding: 20px 30px 0px 20px;
     }
 }

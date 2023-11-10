@@ -1,4 +1,7 @@
 <template>
+    <div class="jumbotron">
+        <img src="../../../images/jumbotron.jpg" alt="jumbotron">
+    </div>
     <section>
         <div class="container">
             <div class="row gx-6 gy-3 align-content-center">
@@ -31,6 +34,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
+
+.jumbotron {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
 
 section {
     padding: 20px;

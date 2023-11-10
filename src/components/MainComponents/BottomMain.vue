@@ -80,7 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 section{
-    background-image: url(../../../public/images/footer-bg.jpg);
+    background-image: url(../../../images/footer-bg.jpg);
     overflow: hidden;
     color: white;
     max-height: 400px;

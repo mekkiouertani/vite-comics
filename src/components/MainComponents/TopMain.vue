@@ -1,10 +1,12 @@
 <template>
     <div id="all-top-main">
+
         <section id="top">
             <div class="container px-5">
-                <h5 class="text-white fs-3">Content Goes Here</h5>
+                
             </div>
         </section>
+
         <section id="bottom">
             <div class="container ">
                 <ul class="w-100">
@@ -21,8 +23,11 @@
 </template>
 
 <script>
+import {cards} from './../../data/dc-comics.js';
+import CardComponent from '../MainComponents/CardComponent/CardComponent.vue'
 export default {
-    name: "TopMain",
+    component : { cards, CardComponent},
+    
     data(){
         return{
             dataBottomMain: [

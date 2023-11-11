@@ -23,7 +23,7 @@ import { cards } from "../data/dc-comics.js";
 
 export default {
     name: "MainApp",
-    components: { TopMain, BottomMain, CardComponent, cards },
+    components: { TopMain, BottomMain, CardComponent, },
     data() {
         return {
             cards: cards,
@@ -38,7 +38,13 @@ export default {
 .jumbotron {
     width: 100%;
     height: 400px;
-    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
 section {

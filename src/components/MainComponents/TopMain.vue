@@ -3,7 +3,7 @@
     <section id="bottom" class="p-3">
       <div class="container">
         <ul class="w-100">
-          <li v-for="item in dataBottomMain" class="text-uppercase d-flex align-items-baseline">
+          <li v-for="item in dataBottomMain" class="text-uppercase d-flex align-items-baseline align-content-center ">
             <div class="box-item-logo">
               <img :src="item.img" alt="item.name" class="w-100" />
             </div>
